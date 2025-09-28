@@ -43,6 +43,8 @@ interface IYieldToken is IERC20Metadata, IReward, IInterestYT {
 
     function rewardIndexesCurrent() external returns (uint256[] memory);
 
+    function pyIndexCurrent() external returns (uint256);
+
     function pyIndexStored() external view returns  (uint256);
 
     function getRewardTokens() external view returns (address[] memory);
